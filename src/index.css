@@ -8,59 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* vibeScape Design System - Teal/Turquoise Theme */
-    --background: 185 30% 8%;
-    --foreground: 180 15% 85%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 185 25% 12%;
-    --card-foreground: 180 15% 85%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 185 25% 12%;
-    --popover-foreground: 180 15% 85%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 180 45% 35%;
-    --primary-foreground: 180 15% 95%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 185 25% 15%;
-    --secondary-foreground: 180 15% 85%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 185 20% 18%;
-    --muted-foreground: 180 10% 60%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 175 40% 30%;
-    --accent-foreground: 180 15% 95%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 185 20% 20%;
-    --input: 185 20% 15%;
-    --ring: 180 45% 45%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* vibeScape Custom Tokens */
-    --primary-teal: 180 45% 35%;
-    --primary-teal-light: 180 40% 45%;
-    --primary-teal-dark: 180 50% 25%;
-    
-    --background-gradient: linear-gradient(135deg, hsl(185 30% 8%) 0%, hsl(180 35% 12%) 50%, hsl(175 25% 10%) 100%);
-    --card-gradient: linear-gradient(145deg, hsl(185 25% 12% / 0.8) 0%, hsl(180 20% 15% / 0.9) 100%);
-    --button-gradient: linear-gradient(135deg, hsl(180 45% 35%) 0%, hsl(175 40% 30%) 100%);
-    --button-hover-gradient: linear-gradient(135deg, hsl(180 45% 40%) 0%, hsl(175 40% 35%) 100%);
-    
-    --shadow-teal: 0 10px 30px -10px hsl(180 45% 35% / 0.3);
-    --shadow-card: 0 20px 40px -15px hsl(185 30% 5% / 0.5);
-    --glow-effect: 0 0 20px hsl(180 45% 45% / 0.3);
+    --sidebar-background: 0 0% 98%;
 
-    --sidebar-background: 185 25% 12%;
-    --sidebar-foreground: 180 15% 85%;
-    --sidebar-primary: 180 45% 35%;
-    --sidebar-primary-foreground: 180 15% 95%;
-    --sidebar-accent: 185 20% 18%;
-    --sidebar-accent-foreground: 180 15% 85%;
-    --sidebar-border: 185 20% 20%;
-    --sidebar-ring: 180 45% 45%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -109,13 +101,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-}
-
-@layer components {
-  .script-font {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    font-style: italic;
-    font-weight: 400;
   }
 }

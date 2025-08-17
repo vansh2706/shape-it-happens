@@ -26,10 +26,7 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
-					teal: 'hsl(var(--primary-teal))',
-					'teal-light': 'hsl(var(--primary-teal-light))',
-					'teal-dark': 'hsl(var(--primary-teal-dark))'
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -65,17 +62,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
-			},
-			backgroundImage: {
-				'gradient-main': 'var(--background-gradient)',
-				'gradient-card': 'var(--card-gradient)',
-				'gradient-button': 'var(--button-gradient)',
-				'gradient-button-hover': 'var(--button-hover-gradient)'
-			},
-			boxShadow: {
-				'teal': 'var(--shadow-teal)',
-				'card': 'var(--shadow-card)',
-				'glow': 'var(--glow-effect)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
