@@ -1,13 +1,43 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { LoginPage } from "@/components/auth/LoginPage";
+import { SignupPage } from "@/components/auth/SignupPage";
+import { Dashboard } from "./Dashboard";
+
+type AuthState = "login" | "signup" | "authenticated";
 
 const Index = () => {
+  const [authState, setAuthState] = useState<AuthState>("login");
+
+  const handleLogin = () => {
+    setAuthState("authenticated");
+  };
+
+  const handleSignup = () => {
+    setAuthState("authenticated");
+  };
+
+  const handleLogout = () => {
+    setAuthState("login");
+  };
+
+  if (authState === "authenticated") {
+    return <Dashboard onLogout={handleLogout} />;
+  }
+
+  if (authState === "signup") {
+    return (
+      <SignupPage
+        onSignup={handleSignup}
+        onSwitchToLogin={() => setAuthState("login")}
+      />
+    );
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <LoginPage
+      onLogin={handleLogin}
+      onSwitchToSignup={() => setAuthState("signup")}
+    />
   );
 };
 
