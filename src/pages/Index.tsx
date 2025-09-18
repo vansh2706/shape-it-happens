@@ -2,6 +2,7 @@ import { useState } from "react";
 import { LoginPage } from "@/components/auth/LoginPage";
 import { SignupPage } from "@/components/auth/SignupPage";
 import { Dashboard } from "./Dashboard";
+import { ConditionalExamples } from "@/components/examples/ConditionalExamples";
 
 type AuthState = "login" | "signup" | "authenticated";
 
@@ -33,12 +34,7 @@ const Index = () => {
     );
   }
 
-  return (
-    <LoginPage
-      onLogin={handleLogin}
-      onSwitchToSignup={() => setAuthState("signup")}
-    />
-  );
+  return <ConditionalExamples />;
 };
 
 export default Index;
